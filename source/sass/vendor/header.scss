@@ -1,3 +1,14 @@
 .header {
-    background-color: #0266C1;
+  @include wrapper;
+  width: $mobile-width;
+  background-color: #0266c1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }

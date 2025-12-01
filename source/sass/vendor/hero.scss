@@ -1,3 +1,15 @@
 .hero {
-    background-image: url('../img/hero_mobile.png');
+  @include wrapper;
+  width: $mobile-width;
+
+  background-image: url("/img/hero_mobile.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
