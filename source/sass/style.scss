@@ -1,4 +1,7 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+@import "vendor/variables";
+@import "vendor/mixins";
+
+@import "vendor/header.scss";
+@import "vendor/hero.scss";
