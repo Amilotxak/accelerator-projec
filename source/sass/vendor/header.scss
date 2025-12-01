@@ -1,14 +1,18 @@
-.header {
-  @include wrapper;
-  width: $mobile-width;
-  background-color: #0266c1;
+.header-wrapper {
+    @include wrapper;
+    background-color: #0266c1;
 
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 80px;
-  }
+    @media (min-width: $tablet-width) {
+        width: 768px;
+    }
 
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
+    @media (min-width: $desktop-width) {
+        width: 1440px;
+    }
+}
+
+.header-buttun-menu {
+@include button;
+width: 26px;
+height: 24px;
 }

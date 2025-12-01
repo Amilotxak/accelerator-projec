@@ -1,6 +1,5 @@
 .hero {
   @include wrapper;
-  width: $mobile-width;
 
   background-image: url("/img/hero_mobile.png");
   background-repeat: no-repeat;
