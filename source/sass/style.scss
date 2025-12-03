@@ -1,7 +1,9 @@
 // Vendor
+@import "vendor/global";
 @import "vendor/normalize";
 @import "vendor/variables";
 @import "vendor/mixins";
 
+@import "vendor/body";
 @import "vendor/header";
 @import "vendor/hero";

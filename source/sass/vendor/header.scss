@@ -1,18 +1,74 @@
-.header-wrapper {
-    @include wrapper;
+.header {
+    width: 320px;
+    height: 100px;
+    display: flex;
     background-color: #0266c1;
 
     @media (min-width: $tablet-width) {
         width: 768px;
+        height: 82px;
     }
 
     @media (min-width: $desktop-width) {
         width: 1440px;
+        height: 126px;
+    }
+
+}
+
+.header-wrapper {
+    @include wrapper;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10;
+    padding: 15px;
+
+    @media (min-width: $tablet-width) {
+        width: 768px;
+        padding: 20px 45px 20px 45px;
+        align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1440px;
+        padding: 32px 120px 32px 120px;
     }
 }
 
 .header-buttun-menu {
-@include button;
-width: 26px;
-height: 24px;
+    // @include button;
+    width: 26px;
+    height: 26px;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: flex-end;
+    width: 142px;
+    height: 42px;
+}
+
+.header-link {
+    @include link;
+    color: $basic-white;
+    margin-top: 14px;
+    text-align: right;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 0;
+    }
 }
