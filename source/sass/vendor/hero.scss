@@ -27,6 +27,7 @@
   line-height: 26px;
   text-align: center;
   color: $basic-white;
+  margin: 104px 0 0;
 }
 
 .hero-description {
@@ -35,6 +36,7 @@
   line-height: 20px;
   text-align: center;
   color: $basic-white;
+  margin: 15px 0 0;
 }
 
 .hero-button {
@@ -51,4 +53,22 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+  margin-top: 60px;
+}
+
+.hero-slider-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.hero-slider-button {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+}
+
+.hero-slider-button--active {
+  background-color: #ffffff;
 }

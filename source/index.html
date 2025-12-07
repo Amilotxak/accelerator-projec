@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lifetour</title>
+
+  <link rel="preload" href="./fonts/montserrat-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/montserrat-medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/montserrat-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -17,7 +25,9 @@
   -->
   <header data-test="header" class="header">
     <div class="header-wrapper">
-      <button class="header-buttun-menu"></button>
+      <button type="button" class="header-buttun-menu">
+        <span class="visually-hidden">меню</span>
+      </button>
       <div class="header-box">
         <a href="#" class="header-logo">
           <img src="./img/logotype_mobile.svg" width="142" height="42" alt="логотип">
@@ -31,16 +41,22 @@
       <h1 class="hero-title">Захватывающие вершины Кавказа</h1>
       <p class="hero-description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите
         восход на вершину горы Чегет.</p>
-      <button class="hero-button">Смотреть тур</button>
-      <ul>
+      <button type="button" class="hero-button">Смотреть тур</button>
+      <ul class="hero-slider-list">
         <li>
-
+          <button type="button" class="hero-slider-button hero-slider-button--active">
+            <span class="visually-hidden">1</span>
+          </button>
         </li>
         <li>
-
+          <button type="button" class="hero-slider-button">
+            <span class="visually-hidden">2</span>
+          </button>
         </li>
         <li>
-
+          <button type="button" class="hero-slider-button">
+            <span class="visually-hidden">3</span>
+          </button>
         </li>
       </ul>
     </div>
@@ -48,15 +64,16 @@
   <section data-test="tours" class="tours">
     <h2 class="tours-title">Ближайшие туры</h2>
     <ul class="tours-carts-list">
-      <li class="tours-cart">
+      <li class="tours-cart tours-cart--elbrus">
         <div class="tours-cart-info">
-          <span>Кавказ</span>
+          <span class="tours-name">Кавказ</span>
           <span>4 дня</span>
           <span>3 ночи</span>
         </div>
         <div class="tours-cart-title">
           Путешествие<br>вокруг Эльбруса
         </div>
+        <span class="tours-cart-separator"></span>
         <div class="tours-cart-detals">
           <span>Сложность:</span>
           <span>Даты набора:</span>
@@ -64,7 +81,7 @@
         </div>
       </li>
     </ul>
-    <button class="tours-cart-button">Показать все туры</button>
+    <button type="button" class="tours-cart-button">Показать все туры</button>
   </section>
   <section data-test="training" class="training">
     <h2 class="training-title">Обучение</h2>
@@ -155,12 +172,14 @@
       сайта.</p>
   </section>
   <section data-test="form">
-    <form action="">
+    <form action="https://echo.htmlacademy.ru">
       <h2>Остались вопросы?</h2>
       <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
 
 
-      <button>Отправить</button>
+      <button type="button">
+        <span class="form-button">Отправить</span>
+      </button>
     </form>
     <div>
       <h2>Контакты</h2>

@@ -1,3 +1,109 @@
 .tours {
-    
+    @include wrapper;
+    height: 595px;
+
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/img/background_tours_mobile.png");
+    background-repeat: no-repeat;
+
+    padding: 20px 15px 20px 15px;
+
+    @media (min-width: $tablet-width) {
+        width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1440px;
+    }
+}
+
+.tours-title {
+    height: 55px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tours-carts-list {
+    display: contents;
+    margin-top: 42px;
+}
+
+.tours-cart {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 416px;
+    padding: 30px 20px 30px 20px;
+    color: #fff;
+}
+
+.tours-cart--elbrus {
+    background-image: url("/img/tours_mobile.png");
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 416px;
+}
+
+.tours-cart-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 224px;
+}
+
+.tours-name {
+    display: flex;
+    width: 90px;
+    height: 28px;
+    background-color: #0266C1;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-cart-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+
+    margin: 15px 0 0;
+}
+
+.tours-cart-separator {
+    display: list-item;
+    width: 80px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: #fff;
+    margin: 15px 0 0;
+}
+
+.tours-cart-detals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 15px 0 0;
+}
+
+.tours-cart-button {
+    width: 212px;
+    height: 34px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    margin: 25px 0 0;
 }

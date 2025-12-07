@@ -1,9 +1,18 @@
-// Vendor
-@import "vendor/global";
+// добавляет миксины
+@import "vendor/mixins.scss";
+@import "vendor/variables.scss";
 @import "vendor/normalize";
-@import "vendor/variables";
-@import "vendor/mixins";
+
+//базовые свойства
+
+@import "vendor/fonts.scss";
+@import "vendor/global.scss";
+
+// Vendor
 
 @import "vendor/body";
 @import "vendor/header";
 @import "vendor/hero";
+@import "vendor/tours";
+// @import "vendor/";
+// @import "vendor/";
